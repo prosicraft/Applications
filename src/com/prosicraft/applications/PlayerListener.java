@@ -32,6 +32,7 @@ public class PlayerListener implements Listener {
                 if ( e.isCancelled() ) return;
                 if ( e.getMessage().substring(1).equalsIgnoreCase(this.app.freePassword) ) {
                         app.free(e.getPlayer());
+			e.setCancelled( true );
                 }                
         }
         
